@@ -2,7 +2,7 @@
 
 <html lang="en">
     <head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-      <title>Comparison - Latitude Analysis</title>
+      <title>Humidity Visualisation</title>
       <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
       <link rel="stylesheet" href="style.css">
     </head>
@@ -10,15 +10,6 @@
 <style>
 
 h2 {
-    color: rgb(74, 170, 165);
-    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
-    font-weight: 700;
-    font-weight: 700;
-    padding-top: 40;
-    margin-top: 40;
-}
-
-h5 {
     color: rgb(74, 170, 165);
     font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
     font-weight: 700;
@@ -114,55 +105,27 @@ nav.navbar.navbar-expand-lg.navbar-light.bg-light {
 
           <br>
           
-
-          <div class="container">
-            <div class="row">
-                <div class="col-1"></div>
-
-                <div class="col-10" style="background-color: rgb(255, 255, 255)">
-                    <h2><br>Comparison: Latitude vs. X</h2><hr>
-                    <p>Click any plot to get an in-depth analysis.</p>
-                    <br>
-                    
-                    <div class="container">
-                        <div class="row">
-                            <div class="col-lg-6 col-12">
-                                <div class="text-center">
-                                    <h5>vs. Max Temperature</h5>
-                                    <div><img class="img-fluid" alt="Responsive image" src="Fig1.png" style="width: 450px" > </div>
-                                </div>
-                            </div>
-                            <div class="col-lg-6 col-12">
-                                <div class="text-center">
-                                    <h5>vs. Humidity</h5>
-                                    <div><img class="img-fluid" alt="Responsive image" src="Fig2.png" style="width: 450px" > </div>
-                                </div>
-                            </div>
+          <div class = "container">
+              <div class="ml-8">
+                <div class="row" padding= 20px>
+                    <div class="col-lg-7 col-12">
+                        <div class="container-fluid" margin-top: 40px style="background-color: rgb(255, 255, 255)">
+                            <h2><br>Humidity</h2><hr>
+                            <img src="Fig2.png" height="320" width="480" class="mx-auto d-block" alt="first image">
+                            <p> <br> Change>>> As expected, the weather becomes significantly warmer as one approaches the equator (0 Deg Latitute). More interestingly, however, is the fact that the southern hemisphere tends to be warmer this time of the year than the northern hemisphere. This may be due to the tilt of the earth at the time of the year this data was gathered. </p><br>
+                            <br>        
                         </div>
                     </div>
-                    <br>
-                    <div class="container">
-                        <div class="row">
-                            <div class="col-lg-6 col-12">
-                                <div class="text-center">
-                                    <h5>vs. Cloudiness</h5>
-                                    <div><img class="img-fluid" alt="Responsive image" src="Fig3.png" style="width: 450px" > </div>
-                                </div>
-                            </div>
-                            <div class="col-lg-6 col-12">
-                                <div class="text-center">
-                                    <h5>vs. Wind Speed</h5>
-                                    <div><img class="img-fluid" alt="Responsive image" src="Fig4.png" style="width: 450px" > </div>
-                                </div>
-                            </div>
-                        </div>
+                    <div class="col-lg-5 col-12">
+                        <div class="container-fluid" style="background-color: rgb(255, 255, 255)">                                
+                            <h2><br>Visualizations</h2><hr>
+                            <div class="text-center"><img src="Fig1.png" class="h-auto d-inline-block" style="width: 200px"> <img src="Fig2.png" class="h-auto d-inline-block" style="width: 200px"> <img src="Fig3.png" class="h-auto d-inline-block" style="width: 200px"> <img src="Fig4.png" class="h-auto d-inline-block" style="width: 200px"> </div>
                         <br>
-                    </div>
-
-
-               </div>
-              <div class="col-1"></div>
+                        </div>    
+                    </div>  
+                </div>
             </div>
+            
 
 
 
