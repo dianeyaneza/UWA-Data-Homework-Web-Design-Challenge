@@ -9,33 +9,62 @@
 
 <style>
 
-h5 {
+h2 {
     color: rgb(74, 170, 165);
-    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-weight: 700;
     font-weight: 700;
     padding-top: 40;
-    
+    margin-top: 40;
 }
 
 .navbar-brand{
-        color: rgb(255, 255, 255)
         display: block;
         background-color: rgb(74, 170, 165);
-        padding-left: 5px;
-        padding-right: 5px;
+        padding-left: 10px;
+        padding-right: 10px;
     }
+
+a.navbar-brand{
+        Color: rgb(255, 255, 255);
+        font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+        font-weight: 700;
+    }
+
+nav.navbar.navbar-expand-lg.navbar-light.bg-light {
+    padding-bottom: 0px;
+}
+
+    .logo {
+    font-weight: bold;
+    
+    color:white;
+    font-size: 40px;
+    font-style:bold;
+    
+}
+
+.first image {
+    float: left; 
+    margin : 5px;
+
+}
+
+.text {
+    float: right;
+}
 
 
 </style>
 
-<body style="background-color: lightgray"></body>
+<body style="background-color: rgb(237, 237, 237)"></body>
 
     <body>
         
-        <nav class="navbar navbar-expand-lg navbar-light bg-light color: rgb(255, 255, 255)">
-            <div class="container-fluid" >
-                <a class="navbar-brand" color: rgb(255, 255, 255) background-color: rgb(74, 170, 165) href="#" >Latitude</a>
-                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarTogglerDemo02" aria-controls="navbarTogglerDemo02" aria-expanded="false" aria-label="Toggle navigation">
+        <nav class="navbar navbar-expand-lg navbar-light bg-light">
+            <div class="container-fluid">
+                <a class="navbar-brand" color: rgb(255, 255, 255) href="Dashboard.html" >Latitude</a>
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive">
                     <span class="navbar-toggler-icon"></span>
                 </button>
                 <div class="collapse navbar-collapse" id="navbarTogglerDemo02">
@@ -63,28 +92,29 @@ h5 {
         </nav>
 
           <br>
-        <div class="container" padding-top: 40px></div>
-
-        <div class="row"  padding= 20px>
-            <div class="col-lg-7 col-12" padding-top: 20px><br>
-                <div class="container-md" style="background-color: rgb(255, 255, 255)" margin-left: 60px >
-                    <h5>Summary: Latitude vs. X </h5><hr>
-                    <div class="pull-left"><img  src="Fig1.png" class="w-50 p-3"></div>
-                    <div class="pull-right"> The purpose of this project was to analyze how weather changes as you get close to the equator.To accomplish this analysis we first pulled data from the OpenWeatherMap API to assemble a dataset on over 500 cities. After assembling the dataset, we used Matplotlib to plot various aspects of weather vs. latitude. Factors we looked at included: temperatue, cloudiness, wind speed and humidity. This site provides the source data and visualizations created as part of the analysis as well as explanations and descriptions of any trends and correlations witnessed.</div>
-                </div>
-            </div>
-
-            <div class="col-lg-5 col-12"><br>
-                <div class="container-fluid" style="background-color: rgb(255, 255, 255)" >
-                    <h5>Visualisations </h5><hr>
-                    <div><img src="Fig1.png" class="h-auto d-inline-block" style="width: 200px"> <img src="Fig2.png" class="h-auto d-inline-block" style="width: 200px"> <img src="Fig3.png" class="h-auto d-inline-block" style="width: 200px"> <img src="Fig4.png" class="h-auto d-inline-block" style="width: 200px"> </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-
-        </div>      
           
+          <div class = "container">
+              <div class="ml-8">
+                <div class="row" padding= 20px>
+                    <div class="col-lg-7 col-12">
+                        <div class="container-fluid" margin-top: 40px style="background-color: rgb(255, 255, 255)">
+                            <h2><br>Summary: Latitude vs. Longitude</h2><hr>
+                            <img src="Fig1.png" height="280" width="380" align="left" alt="first image">
+                            <p> The purpose of this project was to analyze how weather changes as you get close to the equator.To accomplish this analysis we first pulled data from the OpenWeatherMap API to assemble a dataset on over 500 cities.</p><br>
+                            <p> After assembling the dataset, we used Matplotlib to plot various aspects of weather vs. latitude. Factors we looked at included: temperatue, cloudiness, wind speed and humidity. This site provides the source data and visualizations created as part of the analysis as well as explanations and descriptions of any trends and correlations witnessed.</p>
+                            <br>        
+                        </div>
+                    </div>
+                    <div class="col-lg-5 col-12">
+                        <div class="container-fluid" style="background-color: rgb(255, 255, 255)">                                
+                            <h2><br>Visualizations</h2><hr>
+                            <div><img src="Fig1.png" class="h-auto d-inline-block" style="width: 200px"> <img src="Fig2.png" class="h-auto d-inline-block" style="width: 200px"> <img src="Fig3.png" class="h-auto d-inline-block" style="width: 200px"> <img src="Fig4.png" class="h-auto d-inline-block" style="width: 200px"> </div>
+                        </div>    
+                    </div>  
+                </div>
+            </div>
+            
+
 
 
     </body>
