@@ -2,14 +2,25 @@
 
 <html lang="en">
     <head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-      <title>Humidity Visualisation</title>
+      <title>Comparison - Latitude Analysis</title>
       <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
       <link rel="stylesheet" href="style.css">
     </head>
 
+<!-- CSS -->
+
 <style>
 
 h2 {
+    color: rgb(74, 170, 165);
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-weight: 700;
+    font-weight: 700;
+    padding-top: 40;
+    margin-top: 40;
+}
+
+h5 {
     color: rgb(74, 170, 165);
     font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
     font-weight: 700;
@@ -44,16 +55,12 @@ nav.navbar.navbar-expand-lg.navbar-light.bg-light {
     padding-bottom: 0px;
 }
 
-@media screen and (max-width: 600px){
-  .navbar{
-    background-color:rgb(74, 170, 165);
-  }
-}
-
-@media screen and (min-width: 600px) {
-    .navbar{
-    background-color:rgb(255, 255, 255);
-  }
+/* Media query to change navbar background colour upon reducing screen size*/
+@media(max-width:768px){
+    div.container-fluid{
+        color: rgb(74, 170, 165);
+        background-color: rgb(74, 170, 165);
+    }
 }
 
 .first image {
@@ -66,13 +73,14 @@ nav.navbar.navbar-expand-lg.navbar-light.bg-light {
     float: right;
 }
 
-
 </style>
+<!-- /* end of CSS */ -->
 
 <body style="background-color: rgb(237, 237, 237)"></body>
 
     <body>
         
+<!-- navbar -->
         <nav class="navbar navbar-expand-lg navbar-light bg-light">
             <div class="container-fluid">
                 <a class="navbar-brand" color: rgb(255, 255, 255) href="Dashboard.html" >Latitude</a>
@@ -86,10 +94,10 @@ nav.navbar.navbar-expand-lg.navbar-light.bg-light {
                         Plots
                         </a>
                         <ul class="dropdown-menu" aria-labelledby="navbarScrollingDropdown">
-                        <li><a class="dropdown-item" href="#">Max Temp</a></li>
-                        <li><a class="dropdown-item" href="#">Humidity</a></li>
-                        <li><a class="dropdown-item" href="#">Cloudiness</a></li>
-                        <li><a class="dropdown-item" href="#">Wind Speed</a></li>
+                        <li><a class="dropdown-item" href="Max Temperature.html">Max Temp</a></li>
+                        <li><a class="dropdown-item active" href="Humidity.html">Humidity</a></li>
+                        <li><a class="dropdown-item" href="Cloudiness.html">Cloudiness</a></li>
+                        <li><a class="dropdown-item" href="Wind Speed.html">Wind Speed</a></li>
                         </ul>
                     </li> 
                     <li class="nav-item">
@@ -102,9 +110,10 @@ nav.navbar.navbar-expand-lg.navbar-light.bg-light {
                 </div>
             </div>
         </nav>
-
           <br>
-          
+<!-- end of navbar -->
+
+<!-- page content -->
           <div class = "container">
               <div class="ml-8">
                 <div class="row" padding= 20px>
@@ -131,9 +140,6 @@ nav.navbar.navbar-expand-lg.navbar-light.bg-light {
                     </div>  
                 </div>
             </div>
-            
-
-
 
     </body>
 

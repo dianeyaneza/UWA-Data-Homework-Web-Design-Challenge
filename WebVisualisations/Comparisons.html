@@ -7,6 +7,8 @@
       <link rel="stylesheet" href="style.css">
     </head>
 
+<!-- CSS -->
+
 <style>
 
 h2 {
@@ -53,16 +55,12 @@ nav.navbar.navbar-expand-lg.navbar-light.bg-light {
     padding-bottom: 0px;
 }
 
-@media screen and (max-width: 600px){
-  .navbar{
-    background-color:rgb(74, 170, 165);
-  }
-}
-
-@media screen and (min-width: 600px) {
-    .navbar{
-    background-color:rgb(255, 255, 255);
-  }
+/* Media query to change navbar background colour upon reducing screen size*/
+@media(max-width:768px){
+    div.container-fluid{
+        color: rgb(74, 170, 165);
+        background-color: rgb(74, 170, 165);
+    }
 }
 
 .first image {
@@ -75,13 +73,14 @@ nav.navbar.navbar-expand-lg.navbar-light.bg-light {
     float: right;
 }
 
-
 </style>
+<!-- /* end of CSS */ -->
 
 <body style="background-color: rgb(237, 237, 237)"></body>
 
     <body>
         
+<!-- navbar -->
         <nav class="navbar navbar-expand-lg navbar-light bg-light">
             <div class="container-fluid">
                 <a class="navbar-brand" color: rgb(255, 255, 255) href="Dashboard.html" >Latitude</a>
@@ -95,14 +94,14 @@ nav.navbar.navbar-expand-lg.navbar-light.bg-light {
                         Plots
                         </a>
                         <ul class="dropdown-menu" aria-labelledby="navbarScrollingDropdown">
-                        <li><a class="dropdown-item" href="#">Max Temp</a></li>
-                        <li><a class="dropdown-item" href="#">Humidity</a></li>
-                        <li><a class="dropdown-item" href="#">Cloudiness</a></li>
-                        <li><a class="dropdown-item" href="#">Wind Speed</a></li>
+                        <li><a class="dropdown-item" href="Max Temperature.html">Max Temp</a></li>
+                        <li><a class="dropdown-item" href="Humidity.html">Humidity</a></li>
+                        <li><a class="dropdown-item" href="Cloudiness.html">Cloudiness</a></li>
+                        <li><a class="dropdown-item" href="Wind Speed.html">Wind Speed</a></li>
                         </ul>
                     </li> 
                     <li class="nav-item">
-                        <a class="nav-link" href="Comparisons.html">Comparison</a>
+                        <a class="nav-link active" href="Comparisons.html">Comparison</a>
                     </li>
                     <li class="nav-item">
                         <a class="nav-link" href="Data.html" >Data</a>
@@ -111,19 +110,19 @@ nav.navbar.navbar-expand-lg.navbar-light.bg-light {
                 </div>
             </div>
         </nav>
-
           <br>
-          
+<!-- end of navbar -->
 
+<!-- page content -->
           <div class="container">
             <div class="row">
                 <div class="col-1"></div>
 
+                <!-- center column at 10/12 -->
                 <div class="col-10" style="background-color: rgb(255, 255, 255)">
                     <h2><br>Comparison: Latitude vs. X</h2><hr>
                     <p>Click any plot to get an in-depth analysis.</p>
                     <br>
-                    
                     <div class="container">
                         <div class="row">
                             <div class="col-lg-6 col-12">
@@ -131,6 +130,7 @@ nav.navbar.navbar-expand-lg.navbar-light.bg-light {
                                     <h5>vs. Max Temperature</h5>
                                     <div>
                                         <a href="Max Temperature.html" target="_blank"><img class="img-fluid" alt="Responsive image" src="Fig1.png" style="width: 450px"></a>
+                                    <br><hr>
                                     </div>
                                 </div>
                             </div>
@@ -139,6 +139,7 @@ nav.navbar.navbar-expand-lg.navbar-light.bg-light {
                                     <h5>vs. Humidity</h5>
                                     <div>
                                         <a href="Humidity.html" target="_blank"><img class="img-fluid" alt="Responsive image" src="Fig2.png" style="width: 450px">
+                                        <br><hr>
                                     </div>
                                 </div>
                             </div>
@@ -152,6 +153,7 @@ nav.navbar.navbar-expand-lg.navbar-light.bg-light {
                                     <h5>vs. Cloudiness</h5>
                                     <div>
                                         <a href="Cloudiness.html" target="_blank"><img class="img-fluid" alt="Responsive image" src="Fig3.png" style="width: 450px"></a>
+                                    <br><hr>
                                     </div>
                                 </div>
                             </div>
@@ -160,6 +162,7 @@ nav.navbar.navbar-expand-lg.navbar-light.bg-light {
                                     <h5>vs. Wind Speed</h5>
                                     <div>
                                         <a href="Wind Speed.html" target="_blank"><img class="img-fluid" alt="Responsive image" src="Fig4.png" style="width: 450px"></a>
+                                    <br><hr>
                                     </div>
                                 </div>
                             </div>
@@ -167,12 +170,9 @@ nav.navbar.navbar-expand-lg.navbar-light.bg-light {
                         <br>
                     </div>
 
-
                </div>
               <div class="col-1"></div>
             </div>
-
-
 
     </body>
 

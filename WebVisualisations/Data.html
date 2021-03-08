@@ -2,10 +2,12 @@
 
 <html lang="en">
     <head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-      <title>Data - Latitude Analysis</title>
+      <title>Comparison - Latitude Analysis</title>
       <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
       <link rel="stylesheet" href="style.css">
     </head>
+
+<!-- CSS -->
 
 <style>
 
@@ -53,16 +55,12 @@ nav.navbar.navbar-expand-lg.navbar-light.bg-light {
     padding-bottom: 0px;
 }
 
-@media screen and (max-width: 600px){
-  .navbar{
-    background-color:rgb(74, 170, 165);
-  }
-}
-
-@media screen and (min-width: 600px) {
-    .navbar{
-    background-color:rgb(255, 255, 255);
-  }
+/* Media query to change navbar background colour upon reducing screen size*/
+@media(max-width:768px){
+    div.container-fluid{
+        color: rgb(74, 170, 165);
+        background-color: rgb(74, 170, 165);
+    }
 }
 
 .first image {
@@ -75,13 +73,14 @@ nav.navbar.navbar-expand-lg.navbar-light.bg-light {
     float: right;
 }
 
-
 </style>
+<!-- /* end of CSS */ -->
 
 <body style="background-color: rgb(237, 237, 237)"></body>
 
     <body>
         
+<!-- navbar -->
         <nav class="navbar navbar-expand-lg navbar-light bg-light">
             <div class="container-fluid">
                 <a class="navbar-brand" color: rgb(255, 255, 255) href="Dashboard.html" >Latitude</a>
@@ -95,30 +94,31 @@ nav.navbar.navbar-expand-lg.navbar-light.bg-light {
                         Plots
                         </a>
                         <ul class="dropdown-menu" aria-labelledby="navbarScrollingDropdown">
-                        <li><a class="dropdown-item" href="#">Max Temp</a></li>
-                        <li><a class="dropdown-item" href="#">Humidity</a></li>
-                        <li><a class="dropdown-item" href="#">Cloudiness</a></li>
-                        <li><a class="dropdown-item" href="#">Wind Speed</a></li>
+                        <li><a class="dropdown-item" href="Max Temperature.html">Max Temp</a></li>
+                        <li><a class="dropdown-item" href="Humidity.html">Humidity</a></li>
+                        <li><a class="dropdown-item" href="Cloudiness.html">Cloudiness</a></li>
+                        <li><a class="dropdown-item" href="Wind Speed.html">Wind Speed</a></li>
                         </ul>
                     </li> 
                     <li class="nav-item">
-                        <a class="nav-link" href="#">Comparison</a>
+                        <a class="nav-link" href="Comparisons.html">Comparison</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="#" >Data</a>
+                        <a class="nav-link active" href="Data.html" >Data</a>
                     </li>
                     </ul>
                 </div>
             </div>
         </nav>
-
           <br>
-          
+<!-- end of navbar -->
 
+<!-- page content -->
           <div class="container">
             <div class="row">
                 <div class="col-1"></div>
 
+                <!-- center column at 10/12 -->
                 <div class="col-10" style="background-color: rgb(255, 255, 255)">
                     <h2><br>Data</h2><hr>
                     <p>The following table includes all of the data used for plotting during this project.</p>
@@ -6707,13 +6707,9 @@ nav.navbar.navbar-expand-lg.navbar-light.bg-light {
                     </table>
                   </div>                    
 
-
-
                </div>
               <div class="col-1"></div>
             </div>
-
-
 
     </body>
 
