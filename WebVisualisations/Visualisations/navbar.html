@@ -2,13 +2,14 @@
 
 <html lang="en">
     <head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-      <title>Max Temperature - Latitude Analysis</title>
+      <title>Navbar - Latitude Analysis</title>
       <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
       <link rel="stylesheet" href="style.css">
       <script src="https://code.jquery.com/jquery-3.1.0.js"></script> 
     </head>
 
 <!-- CSS -->
+
 <style>
 
 h2 {
@@ -127,7 +128,9 @@ nav.navbar.navbar-expand-lg.navbar-light.bg-light {
                 </div>
             </div>
         </nav>
-        <br>
+       
+
+          <br>
 <!-- end of navbar -->
 
 <!-- page content -->
@@ -136,9 +139,10 @@ nav.navbar.navbar-expand-lg.navbar-light.bg-light {
                 <div class="row" padding= 20px>
                     <div class="col-lg-7 col-12">
                         <div class="container-fluid" margin-top: 40px style="background-color: rgb(255, 255, 255)">
-                            <h2><br>Latitude vs. Max Temperature</h2><hr>
-                            <img src="../Resources/Fig1.png" height="320" width="480" class="mx-auto d-block" alt="first image">
-                            <p> <br> As expected, the weather becomes significantly warmer as one approaches the equator (0 Deg Latitute). More interestingly, however, is the fact that the southern hemisphere tends to be warmer this time of the year than the northern hemisphere. This may be due to the tilt of the earth at the time of the year this data was gathered. </p><br>
+                            <h2><br>Summary: Latitude vs. X</h2><hr>
+                            <img src="../Resources/Fig1.png" height="150" width="200" align="left" alt="first image">
+                            <p> <br> The purpose of this project was to analyze how weather changes as you get close to the equator.To accomplish this analysis we first pulled data from the OpenWeatherMap API to assemble a dataset on over 500 cities.</p><br>
+                            <p>  After assembling the dataset, we used Matplotlib to plot various aspects of weather vs. latitude. Factors we looked at included: temperatue, cloudiness, wind speed and humidity. This site provides the source data and visualizations created as part of the analysis as well as explanations and descriptions of any trends and correlations witnessed.</p>
                             <br>        
                         </div>
                     </div>
@@ -147,19 +151,23 @@ nav.navbar.navbar-expand-lg.navbar-light.bg-light {
                             <h2><br>Visualizations</h2><hr>
                             <div class="text-center">
                                 <div>
-                                    <a href="../Visualisations/Max Temperature.html"><img src="../Resources/Fig1.png" class="h-auto d-inline-block" style="width: 200px"></a>
-                                    <a href="../Visualisations/Humidity.html"><img src="../Resources/Fig2.png" class="h-auto d-inline-block" style="width: 200px"></a>
-                                    <a href="../Visualisations/Cloudiness.html"><img src="../Resources/Fig3.png" class="h-auto d-inline-block" style="width: 200px"></a>
-                                    <a href="../Visualisations/Wind Speed.html"><img src="../Resources/Fig4.png" class="h-auto d-inline-block" style="width: 200px"></a>
+                                    <a href="../Visualisations/Max Temperature.html"><img src="../Resources/Fig1.png" class="h-auto d-inline-block" style="width: 150px"></a>
+                                    <a href="../Visualisations/Humidity.html"><img src="../Resources/Fig2.png" class="h-auto d-inline-block" style="width: 150px"></a>
+                                    <a href="../Visualisations/Cloudiness.html"><img src="../Resources/Fig3.png" class="h-auto d-inline-block" style="width: 150px"></a>
+                                    <a href="../Visualisations/Wind Speed.html"><img src="../Resources/Fig4.png" class="h-auto d-inline-block" style="width: 150px"></a>
                                 </div>
                                 <br>
                         </div>    
                     </div>  
                 </div>
             </div>
+            
             <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
             <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
             <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
- <!-- end of page content --> 
+ <!-- page content -->                  
+
+
     </body>
+
 </html>
